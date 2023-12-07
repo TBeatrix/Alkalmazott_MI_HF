@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dalszöveg Generátor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <h1>Dalszöveg Generátor</h1>
+    <form id="lyricsForm">
+        <label for="mood">Hangulat:</label>
+        <select id="mood">
+            <option value="boldog">Boldog</option>
+            <option value="szomoru">Szomorú</option>
+            <option value="lelkes">Lelkes</option>
+            <option value="melankolikus">Melankolikus</option>
+            <!-- További hangulatok -->
+        </select>
+        <!-- További inputok -->
+        <!-- Stílus -->
+        <label for="style">Stílus:</label>
+        <select id="style">
+            <option value="pop">Pop</option>
+            <option value="rock">Rock</option>
+            <option value="hiphop">Hip-Hop</option>
+            <option value="jazz">Jazz</option>
+            <!-- További stílusok -->
+        </select>
+
+        <!-- Kulcsszavak -->
+        <label for="keywords">Kulcsszavak (vesszővel elválasztva):</label>
+        <input type="text" id="keywords" placeholder="szerelem, naplemente, öröm">
+
+        <!-- Téma -->
+        <label for="theme">Téma:</label>
+        <input type="text" id="theme" placeholder="Téma megadása">
+
+
+        <label for="length">Hossz:</label>
+        <select id="length">
+            <option value="very_short">Nagyon rövid</option>
+            <option value="short">Rövid</option>
+            <option value="normal" selected>Normál</option>
+            <option value="long">Hosszú</option>
+        </select>
+
+        <label for="lanuage">Nyelv:</label>
+        <select id="language">
+            <option value="english">angol</option>
+            <option value="german" selected>német</option>
+            <option value="hungarian">magyar</option>
+            <option value="japanese">japán</option>
+        </select>
+
+
+        <button type="button" onclick="generateLyrics()">Generál</button>
+    </form>
+    <div id="lyricsOutput"></div>
+    
+    <!-- JavaScript Hivatkozások -->
+    <script src="front.js"></script>
+</body>
+</html>
